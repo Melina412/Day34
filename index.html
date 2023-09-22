@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,18 +27,18 @@
 
           <!-- Geschlecht -->
 
-          <label for="geschlecht">Geschlecht</label>
+          <p>Geschlecht</p>
           <div>
-            <input type="radio" name="geschlecht" id="female" />
+            <input type="radio" name="geschlecht" id="female" checked />
             <label for="female">weiblich</label>
-            <input type="radio" name="Geschlecht" id="male" />
+            <input type="radio" name="geschlecht" id="male" />
             <label for="male">männlich</label><br />
           </div>
 
           <!-- Aktivität -->
 
-          <label for="activity">Arbeits- und Freizeitaktivität</label>
-          <select id="activity" required>
+          <label for="aktiv">Arbeits- und Freizeitaktivität</label>
+          <select id="aktiv" required>
             <option value="">Körperliche Belastung auswählen</option>
             <option value="0.95">Schlafen</option>
             <option value="1.2">Nur Sitzen oder Liegen</option>
@@ -63,12 +63,13 @@
         <div class="output">
           <div>
             <!-- Grundumsatz -->
-
+            <p>Grundumsatz:</p>
             <p id="result_kcal"></p>
             <p id="result_kJ"></p>
           </div>
           <div>
             <!-- Gesamtumsatz -->
+            <p>Gesamtumsatz:</p>
 
             <p id="resultTotal_kcal"></p>
             <p id="resultTotal_kJ"></p>
