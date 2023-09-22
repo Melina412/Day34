@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalorienrechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Grundumsatzrechner</h1>
+      <section>
+        <form onsubmit="return false">
+          <!-- Größe -->
+          <label for="groesse">Körpergröße in cm</label>
+          <input type="number" step="1" id="groesse" /><br />
+
+          <!-- Alter -->
+
+          <label for="alter">Alter in Jahren</label>
+          <input type="number" step="1" id="alter" /><br />
+
+          <!-- Gewicht -->
+
+          <label for="gewicht">Gewicht in kg</label>
+          <input type="number" step="1" id="gewicht" /><br />
+
+          <!-- Geschlecht -->
+
+          <label for="geschlecht">Geschlecht</label>
+          <div>
+            <input type="radio" name="geschlecht" id="female" />
+            <label for="female">weiblich</label>
+            <input type="radio" name="Geschlecht" id="male" />
+            <label for="male">männlich</label><br />
+          </div>
+
+          <!-- Aktivität -->
+
+          <label for="activity">Arbeits- und Freizeitaktivität</label>
+          <select id="activity" required>
+            <option value="">Körperliche Belastung auswählen</option>
+            <option value="0.95">Schlafen</option>
+            <option value="1.2">Nur Sitzen oder Liegen</option>
+            <option value="1.5">Ausschließlich sitzende Tätigkeit</option>
+            <option value="1.7">Sitzende Tätigkeit</option>
+            <option value="1.9">
+              Überwiegend gehende oder stehende Tätigkeit
+            </option>
+            <option value="2.2">
+              Körperlich anstrengende berufliche Arbeit
+            </option></select
+          ><br />
+
+          <!-- Submit -->
+
+          <input type="submit" onclick="berechneUmsatz()" />
+        </form>
+      </section>
+      <!-- Output -->
+
+      <section>
+        <div class="output">
+          <div>
+            <!-- Grundumsatz -->
+
+            <p id="result_kcal"></p>
+            <p id="result_kJ"></p>
+          </div>
+          <div>
+            <!-- Gesamtumsatz -->
+
+            <p id="resultTotal_kcal"></p>
+            <p id="resultTotal_kJ"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
