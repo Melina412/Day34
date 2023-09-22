@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 5rem auto;
+}
+main .border {
+  width: 80vw;
+  margin: 0 auto;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  padding-left: 5rem;
+}
+main h1 {
+  padding: 2rem 0;
+}
+main .eingabe form {
+  display: grid;
+  gap: 1rem;
+  width: 60%;
+}
+main .eingabe form label,
+main .eingabe form .label {
+  margin-top: 1rem;
+}
+main .eingabe form .number-input {
+  width: 75%;
+}
+main .eingabe form .submit-button {
+  width: 5rem;
+  margin: 2rem 0;
+}
+main .output {
+  display: grid;
+  gap: 1rem;
+  width: 60%;
+  padding-bottom: 3rem;
+}
+main .output div {
+  display: flex;
+  gap: 3rem;
+}
+main .output div p:first-child {
+  width: 8rem;
+}
+main .output div p:nth-child(2), main .output div p:nth-child(3) {
+  width: 5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -8,59 +8,63 @@
   </head>
   <body>
     <main>
-      <h1>Grundumsatzrechner</h1>
-      <section>
-        <form onsubmit="return false">
-          <!-- Größe -->
-          <label for="groesse">Körpergröße in cm</label>
-          <input type="number" step="1" id="groesse" /><br />
+      <div class="border">
+        <h1>Kalorienumsatzrechner</h1>
+        <section class="eingabe">
+          <form onsubmit="return false">
+            <!-- Größe -->
+            <label for="groesse">Körpergröße in cm</label>
+            <input class="number-input" type="number" step="1" id="groesse" />
 
-          <!-- Alter -->
+            <!-- Alter -->
 
-          <label for="alter">Alter in Jahren</label>
-          <input type="number" step="1" id="alter" /><br />
+            <label for="alter">Alter in Jahren</label>
+            <input class="number-input" type="number" step="1" id="alter" />
 
-          <!-- Gewicht -->
+            <!-- Gewicht -->
 
-          <label for="gewicht">Gewicht in kg</label>
-          <input type="number" step="1" id="gewicht" /><br />
+            <label for="gewicht">Gewicht in kg</label>
+            <input class="number-input" type="number" step="1" id="gewicht" />
 
-          <!-- Geschlecht -->
+            <!-- Geschlecht -->
 
-          <p>Geschlecht</p>
-          <div>
-            <input type="radio" name="geschlecht" id="female" checked />
-            <label for="female">weiblich</label>
-            <input type="radio" name="geschlecht" id="male" />
-            <label for="male">männlich</label><br />
-          </div>
+            <p class="label">Geschlecht</p>
+            <div>
+              <input type="radio" name="geschlecht" id="female" checked />
+              <label for="female">weiblich</label>
+              <input type="radio" name="geschlecht" id="male" />
+              <label for="male">männlich</label>
+            </div>
 
-          <!-- Aktivität -->
+            <!-- Aktivität -->
 
-          <label for="aktiv">Arbeits- und Freizeitaktivität</label>
-          <select id="aktiv" required>
-            <option value="">Körperliche Belastung auswählen</option>
-            <option value="0.95">Schlafen</option>
-            <option value="1.2">Nur Sitzen oder Liegen</option>
-            <option value="1.5">Ausschließlich sitzende Tätigkeit</option>
-            <option value="1.7">Sitzende Tätigkeit</option>
-            <option value="1.9">
-              Überwiegend gehende oder stehende Tätigkeit
-            </option>
-            <option value="2.2">
-              Körperlich anstrengende berufliche Arbeit
-            </option></select
-          ><br />
+            <label for="aktiv">Arbeits- und Freizeitaktivität</label>
+            <select id="aktiv" required>
+              <option value="">Körperliche Belastung auswählen</option>
+              <option value="0.95">Schlafen</option>
+              <option value="1.2">Nur Sitzen oder Liegen</option>
+              <option value="1.5">Ausschließlich sitzende Tätigkeit</option>
+              <option value="1.7">Sitzende Tätigkeit</option>
+              <option value="1.9">
+                Überwiegend gehende oder stehende Tätigkeit
+              </option>
+              <option value="2.2">
+                Körperlich anstrengende berufliche Arbeit
+              </option>
+            </select>
 
-          <!-- Submit -->
+            <!-- Submit -->
 
-          <input type="submit" onclick="berechneUmsatz()" />
-        </form>
-      </section>
-      <!-- Output -->
+            <input
+              class="submit-button"
+              type="submit"
+              onclick="berechneUmsatz()"
+            />
+          </form>
+        </section>
+        <!-- Output -->
 
-      <section>
-        <div class="output">
+        <section class="output">
           <div>
             <!-- Grundumsatz -->
             <p>Grundumsatz:</p>
@@ -74,8 +78,8 @@
             <p id="resultTotal_kcal"></p>
             <p id="resultTotal_kJ"></p>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <script src="./assets/js/main.js"></script>
   </body>
